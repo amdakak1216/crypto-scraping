@@ -24,10 +24,12 @@ for index in range(0, total_values_to_process, 2):
     price = extract_price(price_elements[index])
     print(price)
     batch_total += price
-
+    
     if current_count == 5:
         batch_count += 1
         print(f"Average [{batch_count}]: {batch_total / 5}")
         print("-------------------------")
         batch_total = 0
         current_count = 0
+
+#hello
